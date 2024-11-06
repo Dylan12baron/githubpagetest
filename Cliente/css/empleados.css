@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Added to remove default margin */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+form {
+    padding: 50px 60px; /* Adjusted padding for better spacing */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%; /* Changed to 100% for better responsiveness */
+    max-width: 500px; /* Added max-width for larger screens */
+    background-color: #ffffff; /* White background for form */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: #283629;
+    font-size: 35px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Reduced margin for compactness */
+}
+
+input, textarea {
+    padding: 15px 20px; /* Adjusted padding for inputs */
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #F0FAF1;
+    color: #283629;
+    outline: none;
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus, textarea:focus {
+    border-color: #76b28e; /* Change border color on focus */
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none; /* Changed to none for consistency */
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+    padding: 10px 20px; /* Added padding for button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn:hover {
+    background-color: #50E04B;
+}
+
+@media(max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 30px 20px; /* Adjusted padding for smaller screens */
+        width: 100%;
+    }
+
+    input {
+        padding: 12px; /* Adjusted padding for inputs */
+    }
+}
+
+/* WhatsApp Floating Button */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.fa-whatsapp {
+    font-size: 30px; /* Adjusted size for better fit */
+    line-height: 60px; /* Centering icon vertically */
+}
+
+.float:hover {
+    background-color: #28e76e;
+}
